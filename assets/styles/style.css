@@ -366,7 +366,7 @@ p {
     justify-content: space-between;
     padding-top: 90px;
     padding-bottom: 90px;
-
+    align-items: center;
 }
 
 .icons-tech {
@@ -378,6 +378,15 @@ p {
 }
 
 /***************** PROJECT ***********************/
+
+.paragraph-project {
+    height: 195px;
+    overflow: hidden;
+}
+
+.container-project{
+    padding-top: 100px;
+}
 
 .big-title-project {
     text-align: center;
