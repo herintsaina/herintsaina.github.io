@@ -432,6 +432,7 @@ p {
     background: #191919;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
+    overflow: hidden;
 }
 
 .project-description {
@@ -503,7 +504,7 @@ p {
     margin: 0;
 }
 
-.content-contact span {
+.content-contact a {
     font-weight: 700;
     font-size: 58px;
     background: linear-gradient(to right, rgba(253, 251, 251, 0), rgba(235, 237, 238, 0) 70%);
@@ -691,7 +692,7 @@ p {
         line-height: 40px;
     }
 
-    .content-contact span {
+    .content-contact a {
         font-size: 35px;
     }
 
@@ -942,7 +943,7 @@ p {
         line-height: 70px;
     }
 
-    .content-contact span {
+    .content-contact a {
         font-size: 58px;
     }
 
