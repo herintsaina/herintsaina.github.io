@@ -80,6 +80,10 @@ p {
     height: 100vh;
 }
 
+h2,h1{
+    word-wrap: break-word;
+}
+
 /******************************* HEADER ********************************/
 
 .menu-scroll {
@@ -494,6 +498,8 @@ p {
     font-size: 58px;
     font-family: 'DM Sans';
     line-height: 70px;
+    word-wrap: break-word;
+    width: 100%;
 }
 
 .content-contact h1 {
@@ -501,7 +507,9 @@ p {
     font-family: 'DM Sans';
     line-height: 70px;
     color: #CCCCCC;
+    word-wrap: break-word;
     margin: 0;
+    width: 100%;
 }
 
 .content-contact a {
@@ -509,6 +517,8 @@ p {
     font-size: 58px;
     background: linear-gradient(to right, rgba(253, 251, 251, 0), rgba(235, 237, 238, 0) 70%);
     margin: 0;
+    word-wrap: break-word;
+    width: 100%;
 }
 
 .content-contact a {
@@ -543,6 +553,10 @@ p {
 .logo-footer {
     display: flex;
     gap: 20px;
+}
+
+.logo-footer img{
+    cursor: pointer;
 }
 
 .menu-content {
@@ -590,9 +604,136 @@ p {
     -webkit-text-fill-color: transparent;
 }
 
+/************ Menu Hamburger ***************/
+
+label .menu {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    /* background: #363636; */
+    border-radius: 50% 50% 50% 50%;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #363636, 0 0 0 0 #363636;
+    cursor: pointer;
+}
+
+label .hamburger {
+    /* position: absolute;
+    top: 155px;
+    left: 50px; */
+    position: fixed;
+    top: 50px;
+    left: 90%;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border-radius: 10px;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+label .hamburger:after,
+label .hamburger:before {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+label .hamburger:before {
+    top: -10px;
+}
+
+label .hamburger:after {
+    bottom: -10px;
+}
+
+label input {
+    display: none;
+}
+
+label input:checked+.menu {
+    /* box-shadow: 0 0 0 100vw #363636, 0 0 0 100vh #363636;  */
+    /* box-shadow: 0 0 0 500px #363636;*/
+    height: 48vh;
+    width: 110%;
+    border-radius: 0;
+    background: #363636;
+}
+
+label input:checked+.menu .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+
+label input:checked+.menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+
+}
+
+label input:checked+.menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+
+}
+
+label input:checked+.menu+ul {
+    opacity: 1;
+}
+
+label ul {
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    /* -webkit-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); */
+    list-style: none;
+    opacity: 0;
+    -webkit-transition: .25s 0s ease-in-out;
+    transition: .25s 0s ease-in-out;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+label a {
+    margin-bottom: 1em;
+    display: block;
+    color: #f38630;
+    text-decoration: none;
+}
+
+
+
 /***************** RESPONSIVE **********************/
 
 @media (min-width:320px) {
+    label .hamburger{
+        left: 80%;
+    }
+    label ul{
+        left: 25%;
+    }
+
     .header-portofolio {
         width: 85%;
     }
@@ -634,12 +775,18 @@ p {
 
     /***** ABOUT *****/
 
+    .picture-apartement{
+        display: none;
+    }
+
     .container-information {
         height: 100%;
+        flex-direction: column;
     }
 
     .content-about {
         padding-top: 110px;
+        width: 100%;
     }
 
     .title-about {
@@ -649,6 +796,10 @@ p {
 
     .title-experience {
         text-align: center;
+    }
+
+   .content-about h2 {
+        font-size: 1.5em;
     }
 
     .apartement-lease {
@@ -662,11 +813,15 @@ p {
     /***** Tech Stack *****/
 
     .title-tech h2 {
-        font-size: 42px;
+        font-size: 1.5em;
+    }
+
+    .icons-tech{
+        width: 90px;
     }
 
     .title-tech p {
-        font-size: 25px;
+        font-size: revert;
     }
 
     .content-tech {
@@ -688,18 +843,20 @@ p {
     /**** CONTACT ****/
 
     .content-contact h1 {
-        font-size: 35px;
+        font-size: 1.5rem;
         line-height: 40px;
     }
 
     .content-contact a {
-        font-size: 35px;
+        font-size: 1.5rem;
     }
 
     /**** FOOTER ****/
 
     .content-numero {
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .items-numero {
@@ -1029,6 +1186,10 @@ p {
         height: 25px;
     }
 
+    .container-information {
+        flex-direction: row;
+    }
+
     .logo {
         height: 45px;
     }
@@ -1048,6 +1209,16 @@ p {
 
     .items-project {
         width: 30%;
+    }
+
+    /********** about *************/
+
+    .content-about {
+        width: 50%;
+    }
+
+    .picture-apartement{
+        display: block;
     }
 }
 
@@ -1223,120 +1394,3 @@ p {
     }
 }
 
-/************ Menu Hamburger ***************/
-
-label .menu {
-    position: absolute;
-    right: -100px;
-    top: -100px;
-    z-index: 100;
-    width: 200px;
-    height: 200px;
-    /* background: #363636; */
-    border-radius: 50% 50% 50% 50%;
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    box-shadow: 0 0 0 0 #363636, 0 0 0 0 #363636;
-    cursor: pointer;
-}
-
-label .hamburger {
-    /* position: absolute;
-    top: 155px;
-    left: 50px; */
-    position: fixed;
-    top: 50px;
-    left: 90%;
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    border-radius: 10px;
-    display: block;
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-}
-
-label .hamburger:after,
-label .hamburger:before {
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-}
-
-label .hamburger:before {
-    top: -10px;
-}
-
-label .hamburger:after {
-    bottom: -10px;
-}
-
-label input {
-    display: none;
-}
-
-label input:checked+.menu {
-    /* box-shadow: 0 0 0 100vw #363636, 0 0 0 100vh #363636;  */
-    /* box-shadow: 0 0 0 500px #363636;*/
-    height: 48vh;
-    width: 110%;
-    border-radius: 0;
-    background: #363636;
-}
-
-label input:checked+.menu .hamburger {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-
-}
-
-label input:checked+.menu .hamburger:after {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    bottom: 0;
-
-}
-
-label input:checked+.menu .hamburger:before {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    top: 0;
-
-}
-
-label input:checked+.menu+ul {
-    opacity: 1;
-}
-
-label ul {
-    z-index: 200;
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    /* -webkit-transform: translate(-50%, -50%); */
-    /* transform: translate(-50%, -50%); */
-    list-style: none;
-    opacity: 0;
-    -webkit-transition: .25s 0s ease-in-out;
-    transition: .25s 0s ease-in-out;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Poppins';
-    font-weight: 700;
-}
-
-label a {
-    margin-bottom: 1em;
-    display: block;
-    color: #f38630;
-    text-decoration: none;
-}
