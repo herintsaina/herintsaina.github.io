@@ -692,15 +692,15 @@ label input:checked+.menu .hamburger:before {
 
 }
 
-label input:checked+.menu+ul {
+label input:checked+.menu+.menu-mobil {
     opacity: 1;
 }
 
-label ul {
+label .menu-mobil {
     z-index: 200;
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 26%;
     /* -webkit-transform: translate(-50%, -50%); */
     /* transform: translate(-50%, -50%); */
     list-style: none;
@@ -722,13 +722,23 @@ label a {
     text-decoration: none;
 }
 
+.icon-mobile-header{
+    position: relative;
+    z-index: 600;
+    bottom: 0;
+    justify-content: space-between;
+}
+
+.icon-mobile-header img{
+    height: 40px;
+}
 
 
 /***************** RESPONSIVE **********************/
 
 @media (min-width:320px) {
     label .hamburger{
-        left: 80%;
+        left: 85%;
     }
     label ul{
         left: 25%;
@@ -896,6 +906,8 @@ label a {
     #menu label .menu{
         right: -85px;
     }
+
+
 }
 
 @media (min-width:425px) {
@@ -991,6 +1003,10 @@ label a {
         right: 50px;
     }
 
+}
+
+@media (min-width:800px) {
+    
 }
 
 

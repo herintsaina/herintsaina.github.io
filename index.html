@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="assets/images/illustrations/logo3.png" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/illustrations/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Herintsaina</title>
     <link rel="stylesheet" href="assets/styles/style.css">
@@ -41,15 +41,22 @@
             </div>
 
             <label>
+                
                 <input type="checkbox">
                 <span class="menu"> <span class="hamburger"></span> </span>
-                <ul>
-                    <li class="liste-link"><a href="#home" onclick="checkedMenu()">Acceuil</a></li>
-                    <li class="liste-link"><a href="#about" onclick="checkedMenu()">À propos</a></li>
-                    <li class="liste-link"><a href="#tech" onclick="checkedMenu()">Technologique</a></li>
-                    <li class="liste-link"><a href="#project" onclick="checkedMenu()">Projets</a></li>
-                    <li class="liste-link"><a href="#contact" onclick="checkedMenu()">Contact</a></li>
-                </ul>
+                <div class="menu-mobil">
+                    <div class="liste-link"><a href="#home" onclick="checkedMenu()">Acceuil</a></div>
+                    <div class="liste-link"><a href="#about" onclick="checkedMenu()">À propos</a></div>
+                    <div class="liste-link"><a href="#tech" onclick="checkedMenu()">Technologique</a></div>
+                    <div class="liste-link"><a href="#project" onclick="checkedMenu()">Projets</a></div>
+                    <div class="liste-link"><a href="#contact" onclick="checkedMenu()">Contact</a></div>
+                    <div class="logo-footer icon-mobile-header">
+                        <a href="#"><img src="./assets/images/icons/icons-facebook.png" alt="logo Facebook"></a>
+                        <a href="#"><img src="./assets/images/icons/icon-twitter-blue.png" alt="logo twitter"></a>
+                        <a href="#"><img src="./assets/images/icons/icons-instagram.png" alt="logo Instagram"></a>
+                    </div>
+                </div>
+                
             </label>
         </header>
 
@@ -269,7 +276,6 @@
                 <div class="picture-project">
                     <img src="./assets/images/illustrations/project-picture2.png" alt="picture project">
                 </div>
-
                 <div class="project-description">
                     <h3>Portofolio de Pavan MG</h3>
                     <p class="paragraph-project">C'est le modele de mon Site Web , j'aime le theme et le structure de
