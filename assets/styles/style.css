@@ -929,8 +929,12 @@ label a {
         right: -30px;
     }
 
+    label .menu-mobil{
+        left: 30%;
+    }
+
     #menu label input:checked+.menu {
-        height: 48vh;
+        height: 75vh;
         width: 110%;
     }
 
@@ -975,7 +979,7 @@ label a {
     }
 
     #menu label input:checked+.menu {
-        height: 45vh;
+        height: 75vh;
         width: 100%;
     }
 
