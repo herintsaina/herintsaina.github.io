@@ -872,6 +872,14 @@ label a {
         width: 100%;
     }
 
+    .big-title-project h2{
+        font-size: 1.5em;
+    }
+
+    .big-title-project p{
+        font-size: revert;
+    }
+
     /**** CONTACT ****/
 
     .content-contact h1 {
@@ -1006,6 +1014,30 @@ label a {
         width: 75%;
     }
 
+    .big-title-project p{
+        font-size: 32px;
+    }
+
+    /** ABout**/
+
+    .content-about h2{
+        font-size: 42px;
+    }
+
+    .big-title-project h2{
+        font-size: 48px;
+    }
+
+    /*** tech **/
+
+    .title-tech h2{
+        font-size: 48px;
+    }
+
+    .title-tech p{
+        font-size: 32px;
+    }
+
     /*** BANNER ***/
 
     .items__title h1 {
@@ -1033,6 +1065,13 @@ label a {
     #menu label .menu {
         right: 50px;
     }
+
+    .content-numero{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
 
 }
 
@@ -1124,7 +1163,7 @@ label a {
 
     .content-tech {
         padding-top: 90px;
-        justify-content: space-between;
+        justify-content: left;
         gap: 90px;
     }
 
