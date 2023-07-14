@@ -111,7 +111,7 @@ h2,h1{
 
 .content-header {
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 
 .menu-portofolio {
@@ -1052,8 +1052,12 @@ label a {
     /*** CONTACT ***/
 
     .content-contact h1 {
-        font-size: 48px;
+        font-size: 30px;
         line-height: 52px;
+    }
+
+    .content-contact a{
+        font-size: 30px;
     }
 
     /***** MENU BUnRGER***/
