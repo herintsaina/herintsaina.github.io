@@ -2,6 +2,10 @@ body {
     margin: 0;
     /* font-family: 'Poppins'; */
     background: #191919;
+
+}
+html{
+    scroll-behavior: smooth;
 }
 
 img,
