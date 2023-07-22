@@ -446,6 +446,7 @@ h2,h1{
 }
 
 .project-description {
+    overflow: hidden;
     padding: 20px;
     width: 90%;
     position: relative;
