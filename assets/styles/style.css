@@ -21,14 +21,14 @@ p {
 /* // 'Poppins' */
 @font-face {
     font-family: 'Poppins';
-    src:url('/assets/fonts/Poppins/Poppins-Light.ttf'),
-        url('/assets/fonts/Poppins/Poppins-ExtraLight.ttf'),
-        url('/assets/fonts/Poppins/Poppins-Thin.ttf'),
-        url('/assets/fonts/Poppins/Poppins-Regular.ttf'),
-        url('/assets/fonts/Poppins/Poppins-Medium.ttf'),
-        url('/assets/fonts/Poppins/Poppins-SemiBold.ttf'),
-        url('/assets/fonts/Poppins/Poppins-Bold.ttf'),
-        url('/assets/fonts/Poppins/Poppins-ExtraBold.ttf');
+    src:
+        /* url('/assets/fonts/Poppins/Poppins-ExtraLight.ttf'),
+        url('/assets/fonts/Poppins/Poppins-Thin.ttf'), */
+        url('./assets/fonts/Poppins/Poppins-Regular.ttf'),
+        url('./assets/fonts/Poppins/Poppins-Medium.ttf'),
+        /* url('/assets/fonts/Poppins/Poppins-SemiBold.ttf'), */
+        url('./assets/fonts/Poppins/Poppins-Bold.ttf');
+        /* url('/assets/fonts/Poppins/Poppins-ExtraBold.ttf'); */
 }
 
 
@@ -36,10 +36,10 @@ p {
 
 @font-face {
     font-family: 'DM Sans';
-    src: url('/assets/fonts/DM_Sans/DMSans-Bold.ttf'),
-        url('/assets/fonts/DM_Sans/DMSans-Medium.ttf'),
-        url('/assets/fonts/DM_Sans/DMSans-Regular.ttf'),
-        url('/assets/fonts/DM_Sans/DMSans-Light.ttf');
+    src: url('./assets/fonts/DM_Sans/DMSans-Bold.ttf'),
+        url('./assets/fonts/DM_Sans/DMSans-Medium.ttf'),
+        url('./assets/fonts/DM_Sans/DMSans-Regular.ttf'),
+        url('./assets/fonts/DM_Sans/DMSans-Light.ttf');
 }
 
 
