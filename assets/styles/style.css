@@ -748,13 +748,14 @@ label input:checked+.menu .hamburger:before {
 
 label input:checked+.menu+.menu-mobil {
     opacity: 1;
+    left: 30%;
 }
 
 label .menu-mobil {
     z-index: 200;
     position: absolute;
     top: 50%;
-    left: 26%;
+    left: 200%;
     /* -webkit-transform: translate(-50%, -50%); */
     /* transform: translate(-50%, -50%); */
     list-style: none;
@@ -1000,7 +1001,7 @@ label a {
     }
 
     label .menu-mobil{
-        left: 30%;
+        left: 200%;
     }
 
     #menu label input:checked+.menu {
