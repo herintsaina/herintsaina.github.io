@@ -660,6 +660,11 @@ h2,h1{
 
 /************ Menu Hamburger ***************/
 
+.menu-active {
+    right: -100px;
+    top: -100px;
+}
+
 label .menu {
     position: absolute;
     right: -100px;
@@ -847,7 +852,7 @@ label a {
     }
 
     .section-home {
-        height: 100vh;
+        height: 100%;
     }
 
     .items__profil {
